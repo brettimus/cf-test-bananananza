@@ -14,7 +14,8 @@ if (process.env.ENVIRONMENT === "production") {
     dbCredentials: {
       accountId: process.env.CLOUDFLARE_ACCOUNT_ID ?? "",
       databaseId: process.env.CLOUDFLARE_DATABASE_ID ?? "",
-      token: process.env.CLOUDFLARE_D1_TOKEN ?? "",
+      // NOTE - Modified to use the API key env var as well
+      token: process.env.CLOUDFLARE_D1_TOKEN ?? process.env.CLOUDFLARE_API_KEY ?? "",
     },
   });
 } else {

@@ -1,11 +1,11 @@
-name = "cf-test-bananananza"
+name = "cf-test-bananananza-01"
 compatibility_date = "2025-02-04"
 compatibility_flags = [ "nodejs_compat" ]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "honc-d1-database"
-database_id = "local-honc-d1-database"
+database_name = "cf-test-bananananza-database"
+database_id = "cf-test-bananananza-database"
 migrations_dir = "drizzle/migrations"
 
 # [vars]
