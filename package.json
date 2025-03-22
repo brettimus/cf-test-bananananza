@@ -2,8 +2,8 @@
   "name": "cf-test-bananananza",
   "type": "module",
   "scripts": {
-    "db:provision": "tsx scripts/provision-db.ts",
     "postdeploy": "npm run db:migrate:dtw",
+    "build": "npm run db:migrate:dtw",
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
     "db:touch": "wrangler d1 execute cf-test-bananananza-database --local --command='SELECT 1'",
@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@fiberplane/hono": "0.4.4-beta.2",
-    "cloudflare": "^4.2.0",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.39.3",
     "hono": "^4.7.0",
