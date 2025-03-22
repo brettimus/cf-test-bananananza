@@ -3,7 +3,6 @@
   "type": "module",
   "scripts": {
     "postdeploy": "npm run db:migrate:dtw",
-    "build": "npm run db:migrate:dtw",
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
     "db:touch": "wrangler d1 execute cf-test-bananananza-database --local --command='SELECT 1'",
