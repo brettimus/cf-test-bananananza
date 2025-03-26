@@ -5,7 +5,7 @@ compatibility_flags = [ "nodejs_compat" ]
 [[d1_databases]]
 binding = "DB"
 database_name = "cf-test-bananananza-database"
-database_id = "cf-test-bananananza-database"
+database_id = "cf-test-bananananza-database-id"
 migrations_dir = "drizzle/migrations"
 
 # [vars]
